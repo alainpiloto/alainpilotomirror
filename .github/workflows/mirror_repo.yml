@@ -1,0 +1,17 @@
+name: Mirror Repo porfolio alain Piloto
+on:
+ push:
+    branches:
+      - main
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Mirror
+      uses: repo-sync/github-sync@v2
+      with:
+        source_repo: alainpiloto/alainpiloto.github.io
+        source_branch: main
+        destination_repo: alainpiloto/alainpilotomirror
+        destination_branch: main
+        personal_token: ${{ secrets.SECRETVARIABLE }}
