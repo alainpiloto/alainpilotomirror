@@ -14,4 +14,4 @@ jobs:
         source_repo: alainpiloto/alainpiloto.github.io
         source_branch: main
         destination_branch: main
-        secrets: ${{ secrets.SECRETVARIABLE }}
+        github_token: ${{ secrets.SECRETVARIABLE }}
