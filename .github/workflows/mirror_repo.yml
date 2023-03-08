@@ -17,7 +17,7 @@ jobs:
       uses: repo-sync/github-sync@v2
       
       with:
-        source_repo: https://github.com/alainpiloto/alainpilotomirror
+        source_repo: https://github.com/alainpiloto/alainpiloto.github.io
         source_branch: main
         destination_branch: main
 
