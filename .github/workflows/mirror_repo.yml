@@ -3,6 +3,8 @@ on:
  push:
     branches:
       - main
+env:
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 jobs:
   mirror:
     runs-on: ubuntu-latest
@@ -15,5 +17,4 @@ jobs:
         source_repo: alainpiloto/alainpiloto.github.io
         source_branch: main
         destination_branch: main
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
