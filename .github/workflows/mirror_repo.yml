@@ -10,8 +10,10 @@ jobs:
     steps:
     - name: Mirror
       uses: repo-sync/github-sync@v2
+      
       with:
         source_repo: alainpiloto/alainpiloto.github.io
         source_branch: main
         destination_branch: main
-        github_token: ${{ secrets.SECRETVARIABLE }}
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
